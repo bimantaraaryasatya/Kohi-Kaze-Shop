@@ -24,11 +24,11 @@
             </div>
 
             <div class="login-form">
-                <form action="proses_signin" method="post">
-                    <label for="">Username</label>
-                    <input type="text" name="nama_user" id="username" placeholder="Enter Your Username">
+                <form action="proses_signin.php" method="post">
+                    <label for="nama_user">Username</label>
+                    <input type="text" name="nama_user" id="nama_user" placeholder="Enter Your Username">
                     <label for="password_user">Password</label>
-                    <input type="text" name="password_user" id="password_user" placeholder="Enter Your Password">
+                    <input type="password" name="password_user" id="password_user" placeholder="Enter Your Password">
                     <input type="submit" value="Sign In" class="submit-btn">
                 </form>
             </div>

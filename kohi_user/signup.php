@@ -24,15 +24,21 @@
             </div>
 
             <div class="register-form">
-                <form action="proses_signup" method="post">
-                    <label for="">Username</label>
-                    <input type="text" name="nama_user" id="username" placeholder="Enter Your Username">
+                <form action="proses_signup.php" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Your Username">
+                    <label for="nama_user">Name</label>
+                    <input type="text" name="nama_user" id="nama_user" placeholder="Enter Your Full Name">
                     <label for="email_user">Email</label>
                     <input type="text" name="email_user" id="email_user" placeholder="Enter Your Email">
+                    <label for="alamat_user">Address</label>
+                    <input type="text" name="alamat_user" id="alamat_user" placeholder="Enter Your Address">
+                    <label for="no_telp_user">No Telp</label>
+                    <input type="text" name="no_telp_user" id="no_telp_user" placeholder="Enter Your Number">
                     <label for="password_user">Password</label>
-                    <input type="text" name="password_user" id="password_user" placeholder="Enter Your Password">
+                    <input type="password" name="password_user" id="password_user" placeholder="Enter Your Password">
                     <label for="confirm_password_user">Confirm Password</label>
-                    <input type="text" name="confirm_password_user" id="confirm_password_user" placeholder="Confirm Your Password">
+                    <input type="password" name="confirm_password_user" id="confirm_password_user" placeholder="Confirm Your Password">
                     <input type="submit" value="Sign Up" class="submit-btn">
                 </form>
             </div>
