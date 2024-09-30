@@ -7,9 +7,9 @@
     font-family: Montserrat, sans-serif;
 }
 
-body{
-    height: 100vh;
-    overflow: hidden;
+body {
+    min-height: 100vh;
+    overflow-y: auto; 
 }
 
 .signup-page{
@@ -19,6 +19,7 @@ body{
 }
 
 .image-content{
+    position: fixed;
     height: 100%;
     width: 32%;
 }
@@ -32,6 +33,7 @@ body{
 .register-content{
     height: 100%;
     width: 68%;
+    margin-left: 32%;
     display: flex;
     flex-direction: column;
     gap: 5px;
