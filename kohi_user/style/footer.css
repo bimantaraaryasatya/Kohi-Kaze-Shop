@@ -99,3 +99,27 @@ body{
     font-size: 14px;
     letter-spacing: 2px;
 }
+
+@media (max-width: 992px){
+    .list{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 20px
+    }
+
+    .end-text p{
+        font-size: 12px;
+    }
+}

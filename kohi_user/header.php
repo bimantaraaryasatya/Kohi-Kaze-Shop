@@ -15,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5e57207f98.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/header.css">
-    <title>Header</title>
+    <title></title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="nav-title">
                 <h1>Kohi Kaze</h1>
             </div>
@@ -39,7 +39,7 @@
             <div class="profile-icon">
                 <details>
                     <summary><i class="fa-solid fa-user"></i></summary>
-                    <ul id="profile-links"> 
+                    <ul> 
                         <li><a href="profile.php">Profile</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </ul>
@@ -59,6 +59,7 @@
         </nav>
     </header>
 
+    <!-- <div class="test"><h1>HeLlo</h1></div> -->
     <script>
         // Dropdown Responsif
         const burger = document.querySelector('.burger');
@@ -68,6 +69,16 @@
         burger.onclick = function(){
             dropDownMenu.classList.toggle('open');
         }
+
+        // sticky navbar
+        const nav = document.querySelector('.navbar');
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 20) {
+                nav.classList.add("sticky");
+            }else{
+                nav.classList.remove("sticky");
+            }
+        });
     </script>
 </body>
 </html>
