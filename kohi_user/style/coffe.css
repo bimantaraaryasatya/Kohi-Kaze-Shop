@@ -10,65 +10,23 @@ body{
     width: 100%;
 }
 
-.home-section{
-   background-image: url(../../images/coffe_img_5.jpg);
-   background-size: cover;
-   height: 100%;
-}
-
-.home-content{
-    height: 100%;
-    padding-top: 100px;
-    padding: 100px 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 35px;
-}
-
-.home-text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #fff;
-}
-
-.home-text h4{
-    font-size: 30px;
-    font-weight: 200;
-}
-
-.home-text span{
-    font-weight: 600;
-    color: #4E342E;
-}
-
-.home-text h1{
-    font-size: 60px;
-    font-weight: 500;
-}
-
-.home-button a{
-    background: linear-gradient(90deg, #4E342E 0%, #8D6E63 100%);
-    padding: 20px 20px;
-    border-radius: 15px;
-    color: #fff;
-    text-decoration: none;
+.navbar{
+    background: #4E342E;
 }
 
 /* Menu Page */
 
-.menu{
-    margin-top: 60px;
+.all-coffe-page{
+    margin-top: 141px;
     padding: 0 5%;
     width: 100%;
 }
 
-.menu-title{
+.coffe-title{
     text-align: center;
 }
 
-.menu-title h1{
+.coffe-title h1{
     color: #4E342E;
     font-family: "Pacifico", sans-serif;
     font-size: 70px;

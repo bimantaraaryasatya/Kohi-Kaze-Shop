@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    background: #4E342E;
+}
+
+.detail-coffe-page{
+    margin-top: 200px;
+}
+
+.qty-container{
+    display: flex;
+    align-items: center;
+}
+
+.qty-btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4E342E;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.qty-btn:focus{
+    outline: none;
+}
+
+.qty-input{
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    margin: 0 10px;
+}
+
+.qty-input:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
