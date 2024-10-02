@@ -55,6 +55,7 @@
                         </div>
                     </div>
             <?php
+                $counter++;
                 }
             ?>
         </div>
