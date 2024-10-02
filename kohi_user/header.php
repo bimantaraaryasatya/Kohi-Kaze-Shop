@@ -58,8 +58,6 @@
             </div>
         </nav>
     </header>
-
-    <!-- <div class="test"><h1>HeLlo</h1></div> -->
     <script>
         // Dropdown Responsif
         const burger = document.querySelector('.burger');
