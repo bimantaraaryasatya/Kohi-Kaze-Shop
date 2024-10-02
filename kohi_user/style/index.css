@@ -10,6 +10,11 @@ body{
     width: 100%;
 }
 
+.navbar{
+    background: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(20px);
+}
+
 .home-section{
    background-image: url(../../images/coffe_img_5.jpg);
    background-size: cover;
@@ -86,10 +91,10 @@ body{
 }
 
 .menu-card{
-    flex: 1 1 45%;
+    flex: 1 1 48%;
     display: flex;
     gap: 30px;
-    max-width: 50%;
+    max-width: 100%;
     margin-top: 30px;
 }
 
@@ -144,7 +149,11 @@ body{
 @media (max-width: 992px){
     .menu-card{
         flex: 1 1 100%;
+        width: 100% !important;
+        margin: 0;
     }
+
+    
 }
 
 @media (max-width: 767px){
@@ -159,6 +168,7 @@ body{
     .menu-card{
         flex: 1 1 100%;
         flex-wrap: wrap;
+        max-width: 70%;
     }
 
     .menu-img {
@@ -169,5 +179,9 @@ body{
     .menu-img img {
         width: 100%; 
         height: auto; 
+    }
+    
+    .card-box{
+        justify-content: center !important;
     }
 }
