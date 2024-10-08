@@ -8,10 +8,6 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body{
-    height: 100vh;
-}
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -81,7 +77,6 @@ body{
 .profile-icon summary{
     display: inline-block;
     cursor: pointer;
-    margin-right: 50px;
 }
 
 .profile-icon ul{

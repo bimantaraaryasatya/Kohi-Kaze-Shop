@@ -26,32 +26,36 @@
         $data_detail_produk = mysqli_fetch_array($query_detail_produk);
     ?>
     <section class="detail-coffe-page">
-        <div class="detai-coffe-content">
-            <div class="detail-coffe-image">
-                <img src="../images/<?= $data_detail_produk['foto_produk']?>" alt="">
-            </div>
-
-            <div class="detail-coffe-info">
-                <form action="insertCart.php?id_buku<?=$data_detail_produk['id_produk']?>" method="post">
-                    <div class="product-name-price">
-                        <h1><?=$data_detail_produk['nama_produk']?></h1>
-                        <h1><?=$data_detail_produk['harga_produk']?></h1>
-                    </div>
-                    <div class="product-description">
-                        <p><?=$data_detail_produk['deskripsi_produk']?></p>
-                    </div>
-                    <div class="product-stock-qty">
-                        <p><b>Stok: </b><?=$data_detail_produk['stok_produk']?></p>
-                        <div class="qty-container">
-                            <button class="qty-btn minus" type="button">-</button>
-                            <input type="number" name="qty" value="1" min="1" class="qty-input">
-                            <button class="qty-btn plus" type="button">+</button>
+        <div class="detail-coffe-content">
+            <div class="detail-coffe-main-content">
+                <div class="detail-coffe-image">
+                    <img src="../images/<?= $data_detail_produk['foto_produk']?>" alt="">
+                </div>
+    
+                <div class="detail-coffe-info">
+                    <form action="insertCart.php?id_buku<?=$data_detail_produk['id_produk']?>" method="post">
+                        <div class="product-name-price-desc">
+                            <div class="product-name-price">
+                                <h1><?=$data_detail_produk['nama_produk']?></h1>
+                                <h1>IDR <?=number_format($data_detail_produk['harga_produk'], 0,',', '.') ?></h1>
+                            </div>
+                            <div class="product-desc">
+                                <p><?=$data_detail_produk['deskripsi_produk']?></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="product-button">
-                        <input type="submit" value="Order">
-                    </div>
-                </form>
+                        <div class="product-stock-qty">
+                            <p><b>Stok: </b><?=$data_detail_produk['stok_produk']?></p>
+                            <div class="qty-container">
+                                <button class="qty-btn minus" type="button">-</button>
+                                <input type="number" name="qty" value="1" min="1" class="qty-input">
+                                <button class="qty-btn plus" type="button">+</button>
+                            </div>
+                        </div>
+                        <div class="product-button">
+                            <input type="submit" value="Order">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -77,5 +81,5 @@
 </html>'
 
 <?php
-    // include "footer.php";
+    include "footer.php"
 ?>

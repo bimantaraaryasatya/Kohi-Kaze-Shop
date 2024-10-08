@@ -6,7 +6,7 @@
 }
 
 body{
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
@@ -15,7 +15,92 @@ body{
 }
 
 .detail-coffe-page{
-    margin-top: 200px;
+    padding: 0 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.detail-coffe-content{
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.detail-coffe-main-content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    gap: 120px;
+}
+
+.detail-coffe-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-coffe-info form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detail-coffe-image{
+    overflow: hidden;
+    width: 35%;
+    border-radius: 20px;
+}
+
+.detail-coffe-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-name-price-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.product-name-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-name-price h1{
+    color: #4E342E;
+}
+
+.product-name-price h1:first-child{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.product-name-price h1:last-child{
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-stock-qty{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-stock-qty p{
+    font-size: 17px
 }
 
 .qty-container{
@@ -24,8 +109,8 @@ body{
 }
 
 .qty-btn{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 50%;
     background-color: #4E342E;
@@ -58,4 +143,42 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
+}
+
+.product-button input{
+    border: none;
+    padding: 15px 80px;
+    border-radius: 5px;
+    background-color: #4E342E;
+    color: #fff;
+}
+
+@media (max-width: 992px){
+    .detail-coffe-main-content{
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+        align-items: center;
+    }
+
+    .detail-coffe-image{
+        width: 500px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-coffe-image img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px){
+
+}
+
+
+#contact{
+    margin-top: 50px !important;
 }
