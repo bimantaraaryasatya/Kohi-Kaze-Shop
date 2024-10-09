@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body{
@@ -11,86 +10,75 @@ body{
 }
 
 .navbar{
-    background: #4E342E;
+    background-color: #4E342E;
 }
 
 .detail-coffe-page{
+    height: 86vh;
     padding: 0 5%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
 }
 
 .detail-coffe-content{
-    flex: 1;
-    overflow: hidden;
     height: 100%;
-    display: flex;
     margin-top: 100px;
+    display: flex;
     align-items: center;
 }
 
-.detail-coffe-main-content{
-    height: 80%;
+.detail-coffe-card{
     width: 100%;
+    height: auto;
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
+    justify-content: center;
     gap: 120px;
 }
 
-.detail-coffe-info{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.detail-coffe-info form{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .detail-coffe-image{
-    overflow: hidden;
-    width: 35%;
-    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .detail-coffe-image img{
     width: 100%;
-    height: 100%;
+    height: auto;
+    border-radius: 10px;
     object-fit: cover;
 }
 
-.product-name-price-desc{
+.detail-coffe-info form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    height: 100%;
+    justify-content: space-between;
 }
 
-.product-name-price{
+.coffe-name-price-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.coffe-name-price{
     display: flex;
     justify-content: space-between;
 }
 
-.product-name-price h1{
+.coffe-name-price h1{
     color: #4E342E;
 }
 
-.product-name-price h1:first-child{
-    font-weight: bold;
-    font-size: 30px;
+.coffe-name-price h1:first-child{
+    font-size: 35px;
 }
 
-.product-name-price h1:last-child{
-    font-weight: 400;
-    font-size: 20px;
+.coffe-name-price h1:last-child{
+    font-size: 25px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .product-stock-qty{
@@ -153,32 +141,35 @@ input[type=number]::-webkit-outer-spin-button {
     color: #fff;
 }
 
+@media (max-width: 1070px){
+    .coffe-name-price h1:first-child{
+        font-size: 30px;
+    }
+
+    .coffe-name-price h1:last-child{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 992px){
-    .detail-coffe-main-content{
-        display: flex;
+    .detail-coffe-page{
+        height: auto;
+    }
+
+    .detail-coffe-content{
+        margin-top: 165px;
+    }
+
+    .detail-coffe-card{
         flex-direction: column;
-        height: 95%;
         align-items: center;
     }
 
-    .detail-coffe-image{
-        width: 500px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .detail-coffe-info form{
+        gap: 40px;
     }
 
-    .detail-coffe-image img{
-        max-width: 100%;
+    .product-button input{
+        width: 100%;
     }
-}
-
-@media (max-width: 767px){
-
-}
-
-
-#contact{
-    margin-top: 50px !important;
 }

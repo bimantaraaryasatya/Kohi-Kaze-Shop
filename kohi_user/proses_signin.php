@@ -6,14 +6,14 @@ if ($_POST) {
     // Cek jika username kosong
     if (empty($username)) {
         echo "<script>
-                alert('Username cannot be empty. Please enter your username.');
+                alert('Username cannot be empty. Please enter your username');
                 location.href = 'signin.php';
               </script>";
     }
     // Cek jika password kosong
     elseif (empty($password)) {
         echo "<script>
-                alert('Password cannot be empty. Please enter your password.');
+                alert('Password cannot be empty. Please enter your password');
                 location.href = 'signin.php';
               </script>";
     } 
@@ -40,7 +40,7 @@ if ($_POST) {
                       </script>";
             } else {
                 echo "<script>
-                        alert('Username and password do not match our records. Please check your details and try again.');
+                        alert('Username and password do not match our records. Please check your details and try again');
                         location.href = 'signin.php';
                       </script>";
             }
@@ -48,7 +48,7 @@ if ($_POST) {
         // Jika username tidak ditemukan
         else {
             echo "<script>
-                    alert('Username and password do not match our records. Please check your details and try again.');
+                    alert('Username and password do not match our records. Please check your details and try again');
                     location.href = 'signin.php';
                   </script>";
         }

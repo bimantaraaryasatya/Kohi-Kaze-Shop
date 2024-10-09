@@ -82,6 +82,7 @@
 .profile-icon ul{
     position: absolute;
     top: 73%;
+    right: 1%;
     color: #000;
     background-color: white;
     border: 1px solid #f0eded;
