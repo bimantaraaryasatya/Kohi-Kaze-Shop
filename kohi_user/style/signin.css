@@ -93,3 +93,32 @@ body{
     color: #4E342E;
     text-decoration: none;
 }
+
+@media (max-width: 992px){
+    .signin-page{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .image-content{
+        display: none;
+    }
+
+    .login-form{
+        width: 100%;
+    }
+
+    .login-form form{
+        width: 100%;
+    }
+
+    .login-form form label{
+        text-align: start;
+    }
+}
+
+@media (max-width: 480px){
+    .login-content{
+        padding: 20px 0px;
+    }
+}
