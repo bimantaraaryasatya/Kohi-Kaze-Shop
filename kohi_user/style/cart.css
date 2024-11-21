@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+}
+
+.navbar{
+    background-color: #4E342E;
+}
+
+.cart-page{
+    margin-top: 100px;
+}
+
+.cart-main-content{
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
