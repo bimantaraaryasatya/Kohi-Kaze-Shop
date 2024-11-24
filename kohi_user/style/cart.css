@@ -20,5 +20,219 @@ body{
     padding: 40px 5%;
     display: flex;
     justify-content: space-between;
+    gap: 80px;
 }
 
+.cart-content{
+    width: 55%;
+}
+
+.title-box{
+    padding: 10px 20px;
+    border: 2px solid #ece8e8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title-box h1{
+    color: #4E342E;
+    font-size: 25px;
+}
+
+.title-box p{
+    opacity: 0.7;
+}
+
+.cart-coffe-content{
+    margin-top: 20px;
+}
+
+.cart-coffe-title{
+    margin-bottom: 30px;
+}
+
+.cart-coffe-title h1{
+    color: #4E342E;
+    font-size: 30px;
+}
+
+.cart-coffe-list{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.cart-coffe-card{
+    display: flex;
+    gap: 50px;
+}
+
+.coffe-card-image{
+    width: 300px;
+}
+
+.coffe-card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.coffe-card-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coffe-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.coffe-name-price{
+    display: flex;
+    justify-content: space-between;
+    color: #4E342E;
+}
+
+.coffe-name-price h1{
+    display: flex;
+    font-size: 25px;
+    margin: 0;
+    align-items: center;    
+}
+
+.coffe-name-price h3{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.coffe-category p, .coffe-qty p{
+    opacity: 0.7;
+}
+
+.coffe-delete-btn a{
+    padding: 0; 
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    border: 1px solid #F0EDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    line-height: 40px;
+}
+
+.coffe-delete-btn a i{
+    color: #DC3545;
+}
+
+.summary-content{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-title{
+    margin-bottom: 5px;
+}
+
+.summary-title h1{
+    color: #4E342E;
+    font-size: 25px;
+}
+
+.summary-sub, .summary-tax, .summary-total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-sub h3, .summary-tax h3, .summary-total h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.summary-sub-tax{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 2px solid #ECE8E8;
+    padding-bottom: 10px;
+}
+
+.summary-total{
+    border-bottom: 2px solid #ECE8E8;
+    padding-bottom: 10px;
+}
+
+.summary-button{
+    margin-top: 15px;
+}
+
+.summary-button a{
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #4E342E;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+@media (max-width: 1255px){
+    .summary-sub h3, .summary-tax h3, .summary-total h3{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px){
+    .cart-main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart-content{
+        width: 100%;
+    }
+    .coffe-name-price h1{
+        font-size: 20px;
+    }
+    .summary-content{
+        width: 100%;   
+    }
+    .summary-sub h3, .summary-tax h3, .summary-total h3{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px){
+    .cart-coffe-card{
+        gap: 10px;
+    }
+    .coffe-name-price{
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+    .coffe-delete-btn a{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px){
+    .coffe-delete-btn a{
+        width: 35px;
+        height: 35px;
+    }
+
+    .coffe-delete-btn a i{
+        font-size: 12px;
+    }
+    .summary-sub h3, .summary-tax h3, .summary-total h3{
+        font-size: 15px;
+    }
+}

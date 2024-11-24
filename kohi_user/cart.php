@@ -29,22 +29,50 @@
                                 <img src="../images/Latte_Coffe.jpg" alt="coffe-img">
                             </div>
 
-                            <div class="coffe-card-info">
-                                <div class="coffe-name-price">
-                                    <h1>Caffe latte</h1>
-                                    <h3>IDR 40.000</h3>
-                                </div>
-
-                                <div class="coffe-category">
-                                    <p>Coffe</p>
-                                </div>
-
-                                <div class="coffe-qty">
-                                    <p>Quantity: </p>
+                            <div class="coffe-card-info-container">
+                                <div class="coffe-card-info">
+                                    <div class="coffe-name-price">
+                                        <h1>Caffe latte</h1>
+                                        <h3>IDR 40.000</h3>
+                                    </div>
+    
+                                    <div class="coffe-category">
+                                        <p>Coffe</p>
+                                    </div>
+    
+                                    <div class="coffe-qty">
+                                        <p>Quantity: </p>
+                                    </div>
                                 </div>
 
                                 <div class="coffe-delete-btn">
-                                    <i class="fa-solid fa-trash"></i>
+                                    <a href=""><i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-coffe-card">
+                            <div class="coffe-card-image">
+                                <img src="../images/Latte_Coffe.jpg" alt="coffe-img">
+                            </div>
+
+                            <div class="coffe-card-info-container">
+                                <div class="coffe-card-info">
+                                    <div class="coffe-name-price">
+                                        <h1>Caffe latte</h1>
+                                        <h3>IDR 40.000</h3>
+                                    </div>
+    
+                                    <div class="coffe-category">
+                                        <p>Coffe</p>
+                                    </div>
+    
+                                    <div class="coffe-qty">
+                                        <p>Quantity: </p>
+                                    </div>
+                                </div>
+
+                                <div class="coffe-delete-btn">
+                                    <a href=""><i class="fa-solid fa-trash"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +97,7 @@
                 </div>
 
                 <div class="summary-total">
-                    <h3>Total</h3>
+                    <h3>Total:</h3>
                     <h3>IDR 152.000</h3>
                 </div>
 
