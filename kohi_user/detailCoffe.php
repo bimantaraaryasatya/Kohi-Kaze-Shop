@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-        include "koneksi.php";
+        include "connection.php";
         if (isset($_GET['id_produk'])) {
             $id_detail_produk = $_GET['id_produk'];
         }else{
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="detail-coffe-info">
-                    <form action="insertCart.php?id_buku<?=$data_detail_produk['id_produk']?>" method="post">
+                    <form action="insertCart.php?id_produk=<?=$data_detail_produk['id_produk']?>" method="post">
                         <div class="coffe-name-price-desc">
                             <div class="coffe-name-price">
                                 <h1><?=$data_detail_produk['nama_produk']?></h1>

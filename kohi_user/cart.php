@@ -24,58 +24,43 @@
                     </div>
 
                     <div class="cart-coffe-list">
-                        <div class="cart-coffe-card">
-                            <div class="coffe-card-image">
-                                <img src="../images/Latte_Coffe.jpg" alt="coffe-img">
-                            </div>
+                        <?php
+                        if (isset($_SESSION['cart']) && is_array($_SESSION['cart']) && count($_SESSION['cart']) > 0):
+                            foreach($_SESSION['cart'] as $key_produk => $val_produk):
+                        ?>
+                                <div class="cart-coffe-card">
+                                    <div class="coffe-card-image">
+                                        <img src="../images/<?=$val_produk['foto_produk']?>" alt="coffe-img">
+                                    </div>
 
-                            <div class="coffe-card-info-container">
-                                <div class="coffe-card-info">
-                                    <div class="coffe-name-price">
-                                        <h1>Caffe latte</h1>
-                                        <h3>IDR 40.000</h3>
-                                    </div>
-    
-                                    <div class="coffe-category">
-                                        <p>Coffe</p>
-                                    </div>
-    
-                                    <div class="coffe-qty">
-                                        <p>Quantity: </p>
+                                    <div class="coffe-card-info-container">
+                                        <div class="coffe-card-info">
+                                            <div class="coffe-name-price">
+                                                <h1><?=$val_produk['nama_produk']?></h1>
+                                                <h3>IDR <?=number_format($val_produk['harga_produk'], 0, ',', '.') ?></h3>
+                                            </div>
+
+                                            <div class="coffe-category">
+                                                <p>Coffe</p>
+                                            </div>
+
+                                            <div class="coffe-qty">
+                                                <p>Quantity: <?=$val_produk['qty']?></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="coffe-delete-btn">
+                                            <a href="delete_cart.php?id_produk=<?=$key_produk?>" onclick="return confirm('Are you sure want to delete this product?')"><i class="fa-solid fa-trash"></i></a>
+                                        </div>
                                     </div>
                                 </div>
+                        <?php
+                            endforeach;
+                        ?>
 
-                                <div class="coffe-delete-btn">
-                                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cart-coffe-card">
-                            <div class="coffe-card-image">
-                                <img src="../images/Latte_Coffe.jpg" alt="coffe-img">
-                            </div>
-
-                            <div class="coffe-card-info-container">
-                                <div class="coffe-card-info">
-                                    <div class="coffe-name-price">
-                                        <h1>Caffe latte</h1>
-                                        <h3>IDR 40.000</h3>
-                                    </div>
-    
-                                    <div class="coffe-category">
-                                        <p>Coffe</p>
-                                    </div>
-    
-                                    <div class="coffe-qty">
-                                        <p>Quantity: </p>
-                                    </div>
-                                </div>
-
-                                <div class="coffe-delete-btn">
-                                    <a href=""><i class="fa-solid fa-trash"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
+                        endif
+                        ?>
                     </div>
                 </div>
             </div>

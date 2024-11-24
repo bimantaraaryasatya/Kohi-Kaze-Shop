@@ -19,7 +19,7 @@ if ($_POST) {
                 location.href = 'signup.php';
               </script>";
     } else {
-        include "koneksi.php";
+        include "connection.php";
 
         // cek username sudah ada atau tidak
         $username_check = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
@@ -45,4 +45,4 @@ if ($_POST) {
         }
     }
 }
-?>
+

@@ -29,7 +29,7 @@
         </div>
         <div class="card-box">
             <?php
-                require "koneksi.php";
+                require "connection.php";
                 $counter = 0;
                 $query_kopi = mysqli_query($conn, "SELECT * FROM produk");
                 while ($data_kopi = mysqli_fetch_array($query_kopi)) {

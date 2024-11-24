@@ -18,7 +18,7 @@ if ($_POST) {
               </script>";
     } 
     else {
-        include "koneksi.php";
+        include "connection.php";
 
         // Query untuk mendapatkan data pengguna berdasarkan username
         $qry_login = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username'");
@@ -54,4 +54,4 @@ if ($_POST) {
         }
     }
 }
-?>
+
