@@ -25,6 +25,10 @@
 
                     <div class="cart-coffe-list">
                         <?php
+                        $subTotal = 0;
+                        $jumlahBarang = 0;
+                        $tax = 0;
+                        $total = 0;
                         if (isset($_SESSION['cart']) && is_array($_SESSION['cart']) && count($_SESSION['cart']) > 0):
                             foreach($_SESSION['cart'] as $key_produk => $val_produk):
                         ?>
@@ -37,7 +41,7 @@
                                         <div class="coffe-card-info">
                                             <div class="coffe-name-price">
                                                 <h1><?=$val_produk['nama_produk']?></h1>
-                                                <h3>IDR <?=number_format($val_produk['harga_produk'], 0, ',', '.') ?></h3>
+                                                <h3>IDR <?=number_format($val_produk['harga_produk'], 0, ',', '.')?></h3>
                                             </div>
 
                                             <div class="coffe-category">
@@ -54,6 +58,12 @@
                                         </div>
                                     </div>
                                 </div>
+                            
+                        <?php
+                            $subTotal = $subTotal + $val_produk['harga_produk'] * $val_produk['qty'];
+                            $jumlahBarang ++;
+                        ?>
+
                         <?php
                             endforeach;
                         ?>
@@ -73,17 +83,17 @@
                 <div class="summary-sub-tax">
                     <div class="summary-sub">
                         <h3>Subtotal:</h3>
-                        <h3>IDR 150.000</h3>
+                        <h3>IDR <?=number_format($subTotal, 0, ',', '.')?></h3>
                     </div>
                     <div class="summary-tax">
                         <h3>Estimated Tax:</h3>
-                        <h3>IDR 2.000</h3>
+                        <h3>IDR <?=number_format($tax = $subTotal * 0.01, 0, ',', '.')?></h3>
                     </div>
                 </div>
 
                 <div class="summary-total">
                     <h3>Total:</h3>
-                    <h3>IDR 152.000</h3>
+                    <h3>IDR <?=number_format($total = $subTotal + $tax, 0, ',', '.')?></h3>
                 </div>
 
                 <div class="summary-button">
