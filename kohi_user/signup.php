@@ -25,10 +25,10 @@
 
             <div class="register-form">
                 <form action="proses_signup.php" method="post">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter Your Username">
                     <label for="nama_user">Name</label>
                     <input type="text" name="nama_user" id="nama_user" placeholder="Enter Your Full Name">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter Your Username">
                     <label for="email_user">Email</label>
                     <input type="text" name="email_user" id="email_user" placeholder="Enter Your Email">
                     <label for="alamat_user">Address</label>

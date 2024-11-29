@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat' ,sans-serif;
 }
 
 body {
@@ -75,8 +78,8 @@ body {
     text-decoration: none;
     color: #000;
     display: block;
-    padding: 10px 25px;
-    margin-top: 5px;
+    padding: 15px 25px;
+    margin-top: 10px;
     text-align: start;
     transition: background-color 0.3s ease;
     width: 100%;

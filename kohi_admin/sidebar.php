@@ -18,19 +18,19 @@
                     <ul>
                         <li class="menu-section">
                             <span class="menu-title">Siswa:</span>
-                            <a href="userRead.php"><i class="fa-solid fa-book"></i> Read</a>
+                            <a href="readUser.php"><i class="fa-solid fa-book"></i> Read</a>
                         </li>
     
                         <li class="menu-section">
                             <span class="menu-title">Produk:</span>
-                            <a href="productRead.php"><i class="fa-solid fa-book"></i> Read</a>
-                            <a href="productCreate.php"><i class="fa-solid fa-plus"></i> Create</a>
+                            <a href="readProduct.php"><i class="fa-solid fa-book"></i> Read</a>
+                            <a href="createProduct.php"><i class="fa-solid fa-plus"></i> Create</a>
                         </li>
     
                         <li class="menu-section">
                             <span class="menu-title">Admin:</span>
-                            <a href="adminRead.php"><i class="fa-solid fa-book"></i> Read</a>
-                            <a href="adminCreate.php"><i class="fa-solid fa-plus"></i> Create</a>
+                            <a href="readAdmin.php"><i class="fa-solid fa-book"></i> Read</a>
+                            <a href="createAdmin.php"><i class="fa-solid fa-plus"></i> Create</a>
                         </li>
                     </ul>
                 </div>

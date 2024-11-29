@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+aside {
+    width: 250px; 
+    height: 100%; 
+}
+
+.main-content {
+    flex: 1; 
+    padding: 40px 60px; 
+    background-color: #F1ECF2; 
+}
+
+.register-form{
+    margin-top: 30px;
+}
+
+.register-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.register-form form input{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.register-form form input:focus-visible{
+    outline: none;
+}
+
+.register-form form input:last-child{
+    border: 1px solid #6B4EFF;
+    background-color: #6B4EFF;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+}
