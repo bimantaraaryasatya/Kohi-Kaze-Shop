@@ -1,10 +1,12 @@
 <?php
+include "adminSecurity.php";
 $nama_admin = $_POST['nama_admin'];
 $username_admin = $_POST['username_admin'];
+$email_admin = $_POST['email_admin'];
 $password_admin = $_POST['password_admin'];
 $confirmPassword_admin = $_POST['confirmPassword_admin'];
 
-if (empty($nama_admin) || empty($username_admin) || empty($password_admin)) {
+if (empty($nama_admin) || empty($username_admin) || empty($email_admin) ||empty($password_admin)) {
     echo "  <script>
                 alert('All fields are required. Please fill out the form completely.');
                 location.href = 'createAdmin.php';
@@ -25,7 +27,7 @@ if (empty($nama_admin) || empty($username_admin) || empty($password_admin)) {
                 </script>";
     }else{
         $hashed_password = password_hash($password_admin, PASSWORD_DEFAULT);
-        $insert = mysqli_query($conn, "INSERT INTO admin (nama_admin, username_admin, password_admin) VALUES ('".$nama_admin."', '".$username_admin."', '".$hashed_password."')");
+        $insert = mysqli_query($conn, "INSERT INTO admin (nama_admin, username_admin, email_admin,password_admin) VALUES ('".$nama_admin."', '".$username_admin."', '".$email_admin."','".$hashed_password."')");
         if ($insert) {
             echo "  <script>
                         alert('You have registered successfully. Thank you for signing up.');

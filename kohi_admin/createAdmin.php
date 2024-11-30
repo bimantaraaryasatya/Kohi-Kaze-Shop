@@ -31,6 +31,8 @@
                 <input type="text" name="nama_admin" id="nama_admin" placeholder="Enter Your Name">
                 <label for="username_admin">Username</label>
                 <input type="text" name="username_admin" id="username_admin" placeholder="Enter Your Username">
+                <label for="email_admin">Email</label>
+                <input type="email" name="email_admin" id="email_admin" placeholder="Enter Your Email">
                 <label for="password_admin">Password</label>
                 <input type="password" name="password_admin" id="password_admin" placeholder="Enter Your Password">
                 <label for="confirmPassword_admin">Confirm Password</label>

@@ -1,3 +1,13 @@
+<?php
+session_start();
+if ($_SESSION['status_login_admin'] != true) {
+    echo "  <script>
+                alert('Login first!')
+                location.href = 'signin.php'
+            </script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,12 +27,12 @@
                 <div class="side-bar-list">
                     <ul>
                         <li class="menu-section">
-                            <span class="menu-title">Siswa:</span>
+                            <span class="menu-title">User:</span>
                             <a href="readUser.php"><i class="fa-solid fa-book"></i> Read</a>
                         </li>
     
                         <li class="menu-section">
-                            <span class="menu-title">Produk:</span>
+                            <span class="menu-title">Product:</span>
                             <a href="readProduct.php"><i class="fa-solid fa-book"></i> Read</a>
                             <a href="createProduct.php"><i class="fa-solid fa-plus"></i> Create</a>
                         </li>
@@ -40,7 +50,7 @@
                 <div class="side-bar-logout">
                     <ul>
                         <li class="menu-logout">
-                            <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                            <a href="logoutAdmin.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
                         </li>
                     </ul>
                 </div>

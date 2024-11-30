@@ -36,7 +36,7 @@ if ($_POST) {
 
                 echo "<script>
                         alert('Login successful! Welcome back!');
-                        location.href = 'readUser   .php';
+                        location.href = 'readUser.php';
                       </script>";
             } else {
                 echo "<script>
